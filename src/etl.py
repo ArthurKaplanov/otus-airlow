@@ -1,8 +1,8 @@
-import json
-import pandas as pd
 import io
-import boto3
+import json
 
+import boto3
+import pandas as pd
 
 # Загрузка конфигурационных параметров из файла variables.json
 CONFIG = json.load(open("variables.json", "r"))

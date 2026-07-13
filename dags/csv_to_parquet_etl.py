@@ -31,6 +31,7 @@ dag = DAG(
     description='A simple ETL DAG',         # Описание DAG
     schedule_interval=timedelta(days=1),    # Расписание выполнения - каждый день
     catchup=False,                          # Не выполнять пропущенные запуски
+    tags=['airflow_dag'],
 )
 
 # Функция для создания ресурса S3
